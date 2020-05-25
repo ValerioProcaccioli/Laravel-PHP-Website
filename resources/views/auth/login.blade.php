@@ -7,13 +7,13 @@
     <h1> Login </h1>
     <center>
         <div class="container-contact">
-        <div class="wrap-contact1">
+        <div class="wrap-contact1" id="login-f">
             {{ Form::open(array('route' => 'show_login', 'class' => 'contact-form')) }}
             
-             <div  class="wrap-input">
+             <div class="wrap-input">
                  <p> Non hai un account? <a  href="{{ route('show_register') }}">Clicca qui</a></p>
              </div>            
-             <div  class="wrap-input">
+             <div  class="wrap-input" id="login-name">
                 {{ Form::label('username', 'Nome Utente', ['class' => 'label-input']) }}
                 {{ Form::text('username', '', ['class' => 'input','id' => 'username']) }}
                 @if ($errors->first('username'))
@@ -25,7 +25,7 @@
                 @endif
             </div>
             
-             <div  class="wrap-input">
+             <div  class="wrap-input" id="login-passw">
                 {{ Form::label('password', 'Password', ['class' => 'label-input']) }}
                 {{ Form::password('password', ['class' => 'input', 'id' => 'password']) }}
                 @if ($errors->first('password'))

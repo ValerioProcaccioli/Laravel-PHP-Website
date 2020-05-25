@@ -2,7 +2,8 @@
 @section('title', 'Inserisci Prodotto')
 @section('content')
 
-<h3>Aggiungi prodotti al catalogo</h3>
+<h2>Aggiungi prodotti al catalogo</h2>
+<h4>"Non lasciare nessun campo vuoto"</h4>
 {{Form::open(array('route' => 'upProd', 'id' => 'form', 'files' => true, 'class' => 'p-form')) }}
 <div class="form-group">
     {{Form::label('name','Nome Prodotto',['class' => 'form-label'])}}
@@ -27,7 +28,7 @@
     @endif
 </div>
 <div class="form-group">
-    {{Form::label('price', 'Prezzo', ['class' => 'form-label'])}}
+    {{Form::label('price', 'Prezzo ( usare . non , )', ['class' => 'form-label'])}}
     {{Form::text('price', '', ['class' => 'form-control', 'id' => 'price'])}}
     @if ($errors->first('price'))
     <ul>
@@ -38,7 +39,7 @@
     @endif
 </div>
 <div class="form-group">
-    {{Form::label('discountPerc', 'Sconto(%)', ['class' => 'form-label'])}}
+    {{Form::label('discountPerc', 'Sconto(%) (solo il numero)', ['class' => 'form-label'])}}
     {{Form::text('discountPerc', '', ['class' => 'form-control', 'id' => 'discountPerc'])}}
     @if ($errors->first('discountPerc'))
     <ul>

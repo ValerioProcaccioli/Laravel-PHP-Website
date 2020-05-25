@@ -2,8 +2,8 @@
 @section('title', 'Inserisci Prodotto')
 @section('content')
 
-<h3>Aggiungi prodotti al catalogo</h3>
-{{Form::open(array('route' => 'upCategory', 'id' => 'form', 'files' => true, 'class' => 'p-form')) }}
+<h2>Aggiungi una nuova Sottocategoria</h2>
+{{Form::open(array('route' => 'upCategory', 'id' => 'form', 'files' => true, 'class' => 'c-form')) }}
 
 <div class="form-group">
     {{Form::label('name','Tipo',['class' => 'form-label'])}}

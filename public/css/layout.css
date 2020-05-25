@@ -223,15 +223,16 @@ blockquote:after, q:after{content:' �'; font-size:26px; line-height:0;}
 
 /*----------------------------------------------Header-------------------------------------*/
 #login-f {
-    border: 1px solid; 
+    border: 3px solid; 
     width: 250px; 
-    margin-left: 600px;
-    box-shadow:0 10px 80px rgba(131, 131, 131, 0.9);
+    box-shadow: 10px 10px 10px rgba(131, 131, 131, 0.9);
     background-color: white;
     border-radius: 5px;
     padding: 15px;
 }
-
+#login-passw {
+    margin-left: 21px;
+}
 #header{}
 
 #header #hgroup{
@@ -280,8 +281,22 @@ blockquote:after, q:after{content:' �'; font-size:26px; line-height:0;}
 #filtro {
     box-shadow: 10px 10px 10px rgba(131, 131, 131, 0.9);
     border-radius: 80px;
-    border: 5px solid;
-    
+    border: 3px solid;
+    }
+#descShort {
+    margin-right: 14px;
+}
+#price {
+    margin-right: 38px;
+}
+#discountPerc {
+    margin-right: 65px;
+}
+#discounted {
+    margin-right: 68px;
+}
+#catId {
+    margin-right: 30px;
 }
 /*----------------------------------------------Content Area-------------------------------------*/
 
@@ -310,7 +325,7 @@ blockquote:after, q:after{content:' �'; font-size:26px; line-height:0;}
     box-shadow: 10px 10px 10px rgba(131, 131, 131, 0.9);
     border-radius: 80px;
     height: auto;
-    border: 5px solid;
+    border: 3px solid;
     margin: 20px;
 }
 #container #services article h3{font-size:14px; margin-bottom:5px; text-align: left; margin-left: 3px;}
@@ -421,7 +436,20 @@ blockquote:after, q:after{content:' �'; font-size:26px; line-height:0;}
   background-color: #333;
 }
 
-
+.p-form {
+    width: min-content;
+    margin-left: 490px;
+    border: 3px solid;
+    padding: 30px;
+    border-radius: 30px;
+}
+.c-form {
+    width: min-content;
+    margin-left: 600px;
+    border: 3px solid;
+    padding: 30px;
+    border-radius: 30px;
+}
 .sidebar_menu li { list-style: none; margin: 5px 0px; }
 
 .sub_cat_box {
